@@ -3,6 +3,15 @@
 ```
 # midnight commander
 apt install mc 
+
+
+# shutdown
+su
+systemctl poweroff -i
+
+
+
+
 ```
 
 
@@ -27,6 +36,5 @@ su
 useradd -m -d /home/admin admin
 ls -lad
 passwd admin
-echo 'admin ALL=(ALL) ALL' >> /etc/sudoers
 
 ```
