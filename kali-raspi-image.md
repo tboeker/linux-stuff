@@ -10,10 +10,13 @@ https://www.kali.org/docs/general-use/metapackages/
 cd ~/
 git clone https://gitlab.com/kalilinux/build-scripts/kali-arm
 cd ~/kali-arm/
+
 sudo ./common.d/build_deps.sh
 
+echo 'disable_ipv6="yes"' > ./builder.txt
+
 # build image
-sudo ./rpi1.sh --desktop none
+sudo ./rpi1.sh --minimal
 
 ```
 
