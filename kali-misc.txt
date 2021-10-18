@@ -1,0 +1,40 @@
+EDITOR
+
+sudo apt install gedithttps://www.section.io/engineering-education/setting-up-hotspot-on-kali-linux/
+sudo gedit /etc/dhcp/dhcpd.conf
+sudo gedit /etc/default/isc-dhcp-server
+
+
+INSTALL USB NETWORK DRIVER
+
+lsusb
+sudo dmesg | grep usbcore
+
+ip link
+
+https://wiki.archlinux.org/title/Network_configuration/Wireless
+
+https://blog.abysm.org/2020/03/realtek-802-11ac-usb-wi-fi-linux-driver-installation/
+
+wget https://http.kali.org/kali/pool/contrib/r/realtek-rtl88xxau-dkms/realtek-rtl88xxau-dkms_5.6.4.2~git20210627.b8167e6-0kali1_all.deb
+
+sudo apt update
+
+sudo apt install ./realtek...
+
+externe karte ist jetzt auf wlan1
+
+ACCESS POINT AUF USB WLAN
+
+https://charlesreid1.com/wiki/Kali/Hotspot
+
+https://www.section.io/engineering-education/setting-up-hotspot-on-kali-linux/
+
+https://www.hiroom2.com/2018/08/15/kalilinux-2018-2-isc-dhcp-server-en/
+https://kalitut.com/setup-isc-dhcp-server/
+
+https://gist.github.com/pcurylo/49bd81ea00dab4fde4193d348c75736a
+
+
+sudo systemctl enable isc-dhcp-server
+sudo systemctl restart isc-dhcp-server
