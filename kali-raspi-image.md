@@ -13,10 +13,18 @@ cd ~/kali-arm/
 
 sudo ./common.d/build_deps.sh
 
+# builder config
 echo 'disable_ipv6="yes"' > ./builder.txt
 
 # build image
 sudo ./rpi1.sh --minimal
+
+# check drives
+lsblk
+export SD_CARD=/dev/mmcblk0
+
+xzcat ./images/${IMAGE_FILE} | sudo dd of=${SD_CARD} bs=4M status=progress
+
 
 ```
 
