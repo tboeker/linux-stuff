@@ -4,9 +4,9 @@ https://gitlab.com/kalilinux/build-scripts/kali-arm
 
 https://www.kali.org/docs/general-use/metapackages/
 
-# clone and install build tools
-
 ```
+
+# clone and install build tools
 cd ~/
 git clone https://gitlab.com/kalilinux/build-scripts/kali-arm
 cd ~/kali-arm/
